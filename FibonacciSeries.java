@@ -3,7 +3,7 @@ package com.bridgelab.day6.logical;
 import java.util.Scanner;
 
 public class FibonacciSeries {
-	public static void main(String[] args) {
+	public void series() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter number of Fibonacci number required");
 		int count = sc.nextInt();
@@ -17,5 +17,10 @@ public class FibonacciSeries {
 			Number1 = Number2;
 			Number2 = Number3;
 		}
+		
+	}
+	public static void main(String[] args) {
+		FibonacciSeries s = new FibonacciSeries();
+		s.series();
 	}
 }
